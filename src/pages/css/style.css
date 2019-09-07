@@ -9,3 +9,100 @@
     text-decoration: none;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav, footer {
+    background-color: #1e65df;
+}
+
+footer {
+    padding: 5px;
+    color: aliceblue;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+/* Background */
+#background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+#background img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+/* Menu */
+nav {
+	clear: both;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    padding: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+nav .opcao {
+	float: left;
+	width: 31.3%;
+	background-color: #b1ccf5;
+	padding: 10px 0;
+	margin: 0 1%;
+	font-size: 26px;
+}
+
+nav .opcao:hover {
+	background-color: #83afd3;
+}
+
+/* Flex */
+.flex-item-1 {
+    flex: 1;
+}
+
+/* Sobre */
+.sobre-container {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+}
+
+.sobre-container .texto {
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-container .texto p {
+    text-align: justify;
+    width: 360px;
+    margin: 5px;
+}
+
+.sobre-container .texto img {
+    width: 200px;
+    height: 120px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
