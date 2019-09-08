@@ -29,8 +29,46 @@
                 <img src="../imgs/domingao-logo.png" alt="Logo do programa Domingão do Faustão">
             </header>
     
-            <section>
+            <section class="content-container">
+                <form action="#">
+                    <div class="flex-item-1">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" class="field" name="nome" type="text" placeholder="Digite seu nome...">
+                    
+                        <label for="email">E-mail:</label>
+                        <input id="email" class="field" name="email" type="email" placeholder="Digite seu email...">
+                    </div>
+
+                    <div class="flex-item-1">
+                        <label for="telefone">Telefone:</label>
+                        <input id="telefone" class="field" name="telefone" type="tel" placeholder="Digite seu telefone...">
+                    
+                        <label for="data">Data de nascimento:</label>
+                        <input id="data" class="field" name="data" type="date" autocomplete="off"><br>
+                    </div>
+
+                    <div class="flex-item-1">
+                        <div class="radio-container">
+                            <label>Sexo:</label>
+                            <label class="radio-button">Masculino
+                                <input class="radio" name="gender" type="radio" value="masculino">
+                            </label>
+                            <label class="radio-button">Feminino
+                                <input class="radio" name="gender" type="radio" value="feminino">
+                            </label>
+                            <label class="radio-button">Outro
+                                <input class="radio" name="gender" type="radio" value="outro">
+                            </label>
+                        </div>
     
+                        <input id="confirm-box" class="confirm-box" name="confirm" type="checkbox">Desejo me tornar membro do fã clube e eterno devoto de Fausto Silva.
+                    </div>
+
+                    <div class="btn-field flex-item-1">
+                        <button class="btn btn-reset" type="reset">LIMPAR FORMULÁRIO</button>
+                        <button class="btn btn-submit" type="submit">CONFIRMAR</button>
+                    </div>
+                </form>
             </section>
     
             <footer>Copyright &copy; Gabriel da Silva Borges</footer>

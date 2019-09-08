@@ -106,3 +106,84 @@ nav .opcao:hover {
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
+
+.content-container {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.content-container form {
+    width: 550px;
+}
+
+.field {
+    width: 200px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 3px;
+    border-color: #dcdcdc57;
+}
+
+.nome-field {
+
+}
+
+.email-field {
+
+}
+
+.telefone-field {
+
+}
+
+.data-field {
+
+}
+
+.radio-container {
+
+}
+
+.radio-button input:checked ~ .radio:after {
+    display: block;
+}
+
+.radio-button .radio:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.confirm-box {
+}
+
+.btn-field {
+
+}
+
+.btn {
+    padding: 5px;
+    font-weight: bold;
+    color: #FFFF;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+.btn-reset {
+    background-color: #e17055;
+}
+
+.btn-submit {
+    background-color: #00b894;
+}
+
+.content-container form label {
+
+}
