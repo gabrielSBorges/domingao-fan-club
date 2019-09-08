@@ -19,7 +19,7 @@ header {
 }
 
 nav, footer {
-    background-color: #1e65df;
+    background-color: #454047;
 }
 
 footer {
@@ -96,13 +96,13 @@ nav .opcao:hover {
 .sobre-container .texto p {
     text-align: justify;
     width: 360px;
-    margin: 5px;
+    margin: 10px;
 }
 
 .sobre-container .texto img {
     width: 200px;
     height: 120px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
