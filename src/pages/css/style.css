@@ -39,7 +39,7 @@ nav, footer {
 footer {
     padding: 5px;
     color: aliceblue;
-    position: absolute;
+    position: initial;
     width: 100%;
     bottom: 0;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -126,6 +126,10 @@ nav .opcao:hover {
 /* Form Inscreva-se */
 .linha {
     padding: 5px 0 5px 0;
+}
+
+.form-container {
+    height: 342px;
 }
 
 .form-container form {
