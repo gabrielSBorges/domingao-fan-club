@@ -15,20 +15,6 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
-}
-
-nav, footer {
-    background-color: #454047;
-}
-
-footer {
-    padding: 5px;
-    color: aliceblue;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 /* Background */
@@ -45,7 +31,22 @@ footer {
     opacity: 0.8;
 }
 
-/* Menu */
+/* Menu e Rodapé */
+nav, footer {
+    background-color: #454047;
+}
+
+footer {
+    padding: 5px;
+    color: aliceblue;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    font-size: 12px;
+    height: 24px;
+}
+
 nav {
 	clear: both;
     width: 100%;
@@ -53,6 +54,8 @@ nav {
     display: flex;
     padding: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    font-weight: bold;
+    position: fixed;
 }
 
 nav a {
@@ -72,6 +75,14 @@ nav .opcao {
 
 nav .opcao:hover {
 	background-color: #83afd3;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 /* Flex */
@@ -107,13 +118,33 @@ nav .opcao:hover {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
-.content-container {
+.content-container, .form-container {
     background-color: aliceblue;
     width: 100%;
 }
 
-.content-container form {
-    width: 550px;
+/* Form Inscreva-se */
+.linha {
+    padding: 5px 0 5px 0;
+}
+
+.form-container form {
+    width: 450px;
+    margin: auto;
+    display: grid;
+    line-height: 15px;
+}
+
+.form-container form label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+    color: #4e4e4ee6;
+}
+
+.form-container form span {
+    font-size: 13px;
 }
 
 .field {
