@@ -121,15 +121,12 @@ nav .opcao:hover {
 .content-container, .form-container {
     background-color: aliceblue;
     width: 100%;
+    min-height: 342px;
 }
 
 /* Form Inscreva-se */
 .linha {
     padding: 5px 0 5px 0;
-}
-
-.form-container {
-    height: 342px;
 }
 
 .form-container form {
