@@ -45,6 +45,7 @@ footer {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     font-size: 12px;
     height: 24px;
+    border-top: 1px solid black;
 }
 
 nav {
@@ -56,6 +57,8 @@ nav {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     font-weight: bold;
     position: fixed;
+    border-bottom: 1px solid black;
+    text-shadow: 0px 0px 5px #a4a5a9;
 }
 
 nav a {
@@ -94,9 +97,7 @@ nav .opcao:hover {
 .sobre-container {
     background-color: aliceblue;
     width: 100%;
-    padding: 10px;
     text-align: center;
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
 }
 
 .sobre-container .texto {
@@ -118,10 +119,21 @@ nav .opcao:hover {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
+.sobre-container, .content-container, .form-container {
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+}
+
 .content-container, .form-container {
     background-color: aliceblue;
     width: 100%;
-    min-height: 342px;
+    min-height: 40.5vw;
+}
+
+.content-container h2, .form-container h2, .sobre-container h2 {
+    text-align: center;
+    padding: 5px;
+    background-color: #484977;
+    color: white;
 }
 
 /* Form Inscreva-se */
@@ -131,7 +143,7 @@ nav .opcao:hover {
 
 .form-container form {
     width: 450px;
-    margin: auto;
+    margin: 10px auto;
     display: grid;
     line-height: 15px;
 }
@@ -157,47 +169,10 @@ nav .opcao:hover {
     border-color: #dcdcdc57;
 }
 
-.nome-field {
-
-}
-
-.email-field {
-
-}
-
-.telefone-field {
-
-}
-
-.data-field {
-
-}
-
-.radio-container {
-
-}
-
-.radio-button input:checked ~ .radio:after {
-    display: block;
-}
-
-.radio-button .radio:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.confirm-box {
-}
-
-.btn-field {
-
+.label-text {
+    display: inline-block !important;
+    color: black !important;
+    font-weight: normal !important;
 }
 
 .btn {
@@ -206,16 +181,13 @@ nav .opcao:hover {
     color: #FFFF;
     border-radius: 5px;
     background-color: blue;
+    margin-top: 15px;
 }
 
 .btn-reset {
-    background-color: #e17055;
+    background: linear-gradient(to bottom, #ea6071, #b7392c);
 }
 
 .btn-submit {
-    background-color: #00b894;
-}
-
-.content-container form label {
-
+    background: linear-gradient(to top, #1d976c, #86e0a7);
 }
