@@ -137,6 +137,10 @@ nav .opcao:hover {
 }
 
 /* Form Inscreva-se */
+.form-subscribe {
+    margin: 30px 0 30px 0;
+}
+
 .linha {
     padding: 5px 0 5px 0;
 }
@@ -194,31 +198,45 @@ nav .opcao:hover {
 
 /* Quadros */
 .table-container {
-    margin-top: 15px;
-}
-
-.table-container table, th, td {
-    border: 1px solid black;
+    margin-top: 30px;
 }
 
 .table-container table {
     margin: 15px auto;
 }
 
-.table-container h3 {
+h3 {
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #484753;
+    padding: 5px;
+    border: transparent;
 }
 
 .table-container th {
     padding: 8px 8px 5px 8px;
 }
 
-.table-container tr {
-    
-}
-
 .table-container td {
     padding: 2px 8px;
     text-align: justify;
+}
+
+tr, td, th {
+	border: 1px solid #B0C4DE;
+	padding: 5px;
+}
+
+tr, td {
+    font-size: 16px;
+    color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #b1ccf5;
+}
+
+tr:nth-child(odd) {
+	background-color: #83afd3;
 }

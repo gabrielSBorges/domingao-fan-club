@@ -20,13 +20,12 @@
 
     <body>
         <div id="background">
-            <img src="../imgs/fausto-perfil-1.png" alt="Imagem do Faustão de fundo comendo algo">
+            <img src="../imgs/fausto-perfil-3.jpg" alt="Imagem do Faustão de fundo comendo algo">
         </div>
 
         <nav>
             <a href="../../index.html" class="flex-item-1"><div class="option">HOME</div></a>
             <a href="shows.html" class="flex-item-1"><div class="option">QUADROS</div></a>
-            <a href="news.html" class="flex-item-1"><div class="option">NOTÍCIAS</div></a>
             <a href="subscribe.html" class="flex-item-1"><div class="option">INSCREVA-SE</div></a>
         </nav>
 
@@ -37,56 +36,59 @@
         <section class="form-container">
             <h2>INSCREVA-SE</h2>
 
-            <form action="#">
-                <div class="left linha">
-                    <div class="left">
-                        <label for="nome">Nome:</label>
-                        <input id="nome" class="field" name="nome" type="text" placeholder="Digite seu nome...">
+            <div class="form-subscribe">
+                <h3>Venha fazer parte do clube!</h3>
+                <form action="#">
+                    <div class="left linha">
+                        <div class="left">
+                            <label for="nome">Nome:</label>
+                            <input id="nome" class="field" name="nome" type="text" placeholder="Digite seu nome...">
+                        </div>
+    
+                        <div class="right">
+                            <label for="email">E-mail:</label>
+                            <input id="email" class="field" name="email" type="email" placeholder="Digite seu email...">
+                        </div>
                     </div>
-
-                    <div class="right">
-                        <label for="email">E-mail:</label>
-                        <input id="email" class="field" name="email" type="email" placeholder="Digite seu email...">
-                    </div>
-                </div>
-
-                <div class="left linha">
-                    <div class="left">
-                        <label for="telefone">Telefone:</label>
-                        <input id="telefone" class="field" name="telefone" type="tel" placeholder="Digite seu telefone...">
-                    </div>
-                
-                    <div class="right">
-                        <label for="data">Data de nascimento:</label>
-                        <input id="data" class="field" name="data" type="date" autocomplete="off">
-                    </div>
-                </div>
-
-                <div class="radio-container left linha">
-                    <label>Sexo:</label>
+    
+                    <div class="left linha">
+                        <div class="left">
+                            <label for="telefone">Telefone:</label>
+                            <input id="telefone" class="field" name="telefone" type="tel" placeholder="Digite seu telefone...">
+                        </div>
                     
-                    <input class="radio-button" name="gender" type="radio" value="masculino">
-                    <label class="label-text">Masculino</label>
-
-                    <input class="radio-button" name="gender" type="radio" value="feminino">
-                    <label class="label-text">Feminino</label>
-
-                    <input class="radio-button" name="gender" type="radio" value="outro">
-                    <label class="label-text">Outro</label>
-                </div>
-                
-                <div class="left linha">
-                    <input class="confirm-box" name="confirm" type="checkbox">
-                    <label class="label-text">Desejo me tornar membro do fã clube e eterno devoto de Fausto Silva.</label>
-                </div>
-                
-                <div class="btn-field left linha">
-                    <button class="btn btn-reset left" type="reset">LIMPAR FORMULÁRIO</button>
-                    <button class="btn btn-submit right" type="submit">CONFIRMAR</button>
-                </div>
-            </form>
+                        <div class="right">
+                            <label for="data">Data de nascimento:</label>
+                            <input id="data" class="field" name="data" type="date" autocomplete="off">
+                        </div>
+                    </div>
+    
+                    <div class="radio-container left linha">
+                        <label>Sexo:</label>
+                        
+                        <input class="radio-button" name="gender" type="radio" value="masculino">
+                        <label class="label-text">Masculino</label>
+    
+                        <input class="radio-button" name="gender" type="radio" value="feminino">
+                        <label class="label-text">Feminino</label>
+    
+                        <input class="radio-button" name="gender" type="radio" value="outro">
+                        <label class="label-text">Outro</label>
+                    </div>
+                    
+                    <div class="left linha">
+                        <input class="confirm-box" name="confirm" type="checkbox">
+                        <label class="label-text">Desejo me tornar membro do fã clube e eterno devoto de Fausto Silva.</label>
+                    </div>
+                    
+                    <div class="btn-field left linha">
+                        <button class="btn btn-reset left" type="reset">LIMPAR FORMULÁRIO</button>
+                        <button class="btn btn-submit right" type="submit">CONFIRMAR</button>
+                    </div>
+                </form>
+            </div>
+            <footer>Copyright &copy; Gabriel da Silva Borges</footer>
         </section>
         
-        <footer>Copyright &copy; Gabriel da Silva Borges</footer>
     </body>
 </html>
