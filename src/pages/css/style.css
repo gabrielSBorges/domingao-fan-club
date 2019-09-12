@@ -126,7 +126,7 @@ nav .opcao:hover {
 .content-container, .form-container {
     background-color: aliceblue;
     width: 100%;
-    min-height: 40.5vw;
+    min-height: 330px;
 }
 
 .content-container h2, .form-container h2, .sobre-container h2 {
@@ -190,4 +190,35 @@ nav .opcao:hover {
 
 .btn-submit {
     background: linear-gradient(to top, #1d976c, #86e0a7);
+}
+
+/* Quadros */
+.table-container {
+    margin-top: 15px;
+}
+
+.table-container table, th, td {
+    border: 1px solid black;
+}
+
+.table-container table {
+    margin: 15px auto;
+}
+
+.table-container h3 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.table-container th {
+    padding: 8px 8px 5px 8px;
+}
+
+.table-container tr {
+    
+}
+
+.table-container td {
+    padding: 2px 8px;
+    text-align: justify;
 }
