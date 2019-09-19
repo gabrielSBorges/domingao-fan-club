@@ -186,6 +186,12 @@ nav .opcao:hover {
     border-radius: 5px;
     background-color: blue;
     margin-top: 15px;
+    cursor: pointer;
+}
+
+.block {
+    cursor: no-drop !important;
+    background: linear-gradient(to top, #1d976c73, #86e0a740) !important;
 }
 
 .btn-reset {

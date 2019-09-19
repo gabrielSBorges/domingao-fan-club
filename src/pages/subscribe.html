@@ -6,14 +6,10 @@
 		<meta name="keywords" content="Faustão, Domingão, Globo, Domingão do Faustão, Domingo, Fã-Clube">
 		<meta name="author" content="Gabriel da Silva Borges">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <style>
-            /* body {
-                overflow: hidden;
-            } */
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="../../js/site.js"></script>
+        
 
         <title>Domingão Fã-Clube</title>
     </head>
@@ -38,23 +34,23 @@
 
             <div class="form-subscribe">
                 <h3>Venha fazer parte do clube!</h3>
-                <form action="#">
+                <form action="#" name="formSubscribe" onsubmit="validaSubscribe()">
                     <div class="left linha">
                         <div class="left">
                             <label for="nome">Nome:</label>
-                            <input id="nome" class="field" name="nome" type="text" placeholder="Digite seu nome...">
+                            <input id="nome" class="field" name="nome" type="text" placeholder="Ex: Gabriel Borges">
                         </div>
     
                         <div class="right">
                             <label for="email">E-mail:</label>
-                            <input id="email" class="field" name="email" type="email" placeholder="Digite seu email...">
+                            <input id="email" class="field" name="email" type="email" placeholder="Ex: gabriel@gmail.com">
                         </div>
                     </div>
     
                     <div class="left linha">
                         <div class="left">
                             <label for="telefone">Telefone:</label>
-                            <input id="telefone" class="field" name="telefone" type="tel" placeholder="Digite seu telefone...">
+                            <input id="telefone" class="field" name="telefone" type="tel" placeholder="Ex: (47)99848-6878">
                         </div>
                     
                         <div class="right">
@@ -77,16 +73,17 @@
                     </div>
                     
                     <div class="left linha">
-                        <input class="confirm-box" name="confirm" type="checkbox">
+                        <input class="confirm-box" name="confirm" type="checkbox" onclick="confirmClick()">
                         <label class="label-text">Desejo me tornar membro do fã clube e eterno devoto de Fausto Silva.</label>
                     </div>
                     
                     <div class="btn-field left linha">
                         <button class="btn btn-reset left" type="reset">LIMPAR FORMULÁRIO</button>
-                        <button class="btn btn-submit right" type="submit">CONFIRMAR</button>
+                        <button id="btn-submit" class="btn btn-submit right block" type="submit" disabled>CONFIRMAR</button>
                     </div>
                 </form>
             </div>
+
             <footer>Copyright &copy; Gabriel da Silva Borges</footer>
         </section>
         
