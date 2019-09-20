@@ -1,4 +1,4 @@
-function validaSubscribe() {
+function validaSubscribe(event) {
     let nome = document.getElementById("nome");
     let telefone = document.getElementById("telefone");
     let email = document.getElementById("email");
@@ -15,30 +15,29 @@ function validaSubscribe() {
     if (!regexNome.test(nome.value)) {
         alert('Preencha o campo "Nome" corretamente!');
         nome.focus();
-        return false;
+        event.preventDefault();
     }
-
     if (!regexFone.test(telefone.value)) {
         alert('Preencha o campo "Telefone" corretamente!');
         telefone.focus();
-        return false;
+        event.preventDefault();
     }
 
     if (!regexEmail.test(email.value)) {
         alert('Preencha o campo "E-mail" corretamente!');
         email.focus();
-        return false;
+        event.preventDefault();
     }
 
     if (!regexData.test(data.value)) {
         alert('Preencha o campo "Data de nascimento" corretamente!');
         data.focus();
-        return false;
+        event.preventDefault();
     }
 
     if (isEmpty(gender.value)) {
         alert('Selecione o seu gênero sexual!');
-        return false;
+        event.preventDefault();
     }
 
     alert('Inscrição realizada com sucesso!');
