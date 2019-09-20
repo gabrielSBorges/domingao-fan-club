@@ -1,9 +1,10 @@
 function validaSubscribe() {
-    let nome = document.formSubscribe.nome;
-    let telefone = document.formSubscribe.telefone;
-    let email = document.formSubscribe.email;
-    let data = document.formSubscribe.data;
-    let gender = document.formSubscribe.gender;
+    let nome = document.getElementById("nome");
+    let telefone = document.getElementById("telefone");
+    let email = document.getElementById("email");
+    let data = document.getElementById("data");
+    var gender = document.formSubscribe.gender;
+    
 
     let regexNome = /^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$/;
     let regexFone = /^[(]{1}[1-9]{2}[)]{1}[0-9]{4,5}[-]{1}[0-9]{4}$/;
@@ -55,8 +56,6 @@ function confirmClick() {
         btnSubmit.disabled = true;
         btnSubmit.classList.add("block");
     }
-
-    return false;
 }
 
 function isEmpty(value) {
