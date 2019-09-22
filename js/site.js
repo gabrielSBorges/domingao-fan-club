@@ -16,32 +16,22 @@ function validaSubscribe(event) {
         alert('Preencha o campo "Nome" corretamente!');
         nome.focus();
         event.preventDefault();
-    }
-    if (!regexFone.test(telefone.value)) {
+    } else if (!regexFone.test(telefone.value)) {
         alert('Preencha o campo "Telefone" corretamente!');
         telefone.focus();
         event.preventDefault();
-    }
-
-    if (!regexEmail.test(email.value)) {
+    } else if (!regexEmail.test(email.value)) {
         alert('Preencha o campo "E-mail" corretamente!');
         email.focus();
         event.preventDefault();
-    }
-
-    if (!regexData.test(data.value)) {
+    } else if (!regexData.test(data.value)) {
         alert('Preencha o campo "Data de nascimento" corretamente!');
         data.focus();
         event.preventDefault();
-    }
-
-    if (isEmpty(gender.value)) {
+    } else if (isEmpty(gender.value)) {
         alert('Selecione o seu gênero sexual!');
         event.preventDefault();
     }
-
-    alert('Inscrição realizada com sucesso!');
-    return true;
 }
 
 function confirmClick() {
